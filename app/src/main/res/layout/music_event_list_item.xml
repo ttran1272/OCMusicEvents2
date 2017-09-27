@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/listitemImageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -17,21 +17,21 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="60dp"
+            android:id="@+id/listitemTitleTextView"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:padding="2dip"
             android:textSize="20sp"
-            android:text="TextView" />
+            android:text="Textview"/>
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="60dp"
+            android:id="@+id/listitemDateTextView"
+            android:layout_width="match_parent"
             android:layout_height="20dp"
             android:padding="2dip"
             android:textSize="15sp"
-            android:text="TextView" />
+            android:text="Textview"/>
 
     </LinearLayout>
 
-</LinearLayout>ma
+</LinearLayout>

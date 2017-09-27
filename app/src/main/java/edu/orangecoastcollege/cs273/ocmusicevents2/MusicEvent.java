@@ -4,7 +4,7 @@ package edu.orangecoastcollege.cs273.ocmusicevents2;
  * The MusicEvent class is a place holder for data corresponding to music events
  * occurring within Orange County, including title, date, day, time, location,
  * address and a corresponding image.
- *
+ * 8 fields being got from MusicEvent.json
  * @author Michael Paulding
  * @version 1.0
  */

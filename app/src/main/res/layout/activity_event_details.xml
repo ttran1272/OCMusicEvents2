@@ -32,14 +32,46 @@
         android:textSize="60sp"/>
 
     <TextView
-        android:id="@+id/eventDetailsTextView"
+        android:id="@+id/eventDateTextView"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/eventDayTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="40dp"
-        android:layout_weight="1"
-        android:text="TextView"
-        android:textSize="30sp"/>
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/eventTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/eventLocationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/eventAddress1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/eventAddress2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/backButton"
@@ -47,6 +79,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="goBackToList"
-        android:text="Back to List"
+        android:text="@string/back_to_list_button_text"
         android:textSize="40sp"/>
 </LinearLayout>

@@ -20,15 +20,26 @@ public class EventDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_details);
 
-
         Intent intent = getIntent();
         String title = intent.getStringExtra("Title");
-        String details = intent.getStringExtra("Details");
-        String imageFileName = title.replace(" ", "") + ".jpeg";
+        String date = intent.getStringExtra("Date");
+        String day = intent.getStringExtra("Day");
+        String time = intent.getStringExtra("Time");
+        String location = intent.getStringExtra("Location");
+        String address1 = intent.getStringExtra("Address1");
+        String address2 = intent.getStringExtra("Address2");
+        String imageFileName = intent.getStringExtra("ImageName");
 
         ImageView eventImageView = (ImageView) findViewById(R.id.eventImageView);
+
         TextView eventTitleTextView = (TextView) findViewById(R.id.eventTitleTextView);
-        TextView eventDetailsTextView = (TextView) findViewById(R.id.eventDetailsTextView);
+        TextView eventDateTextView = (TextView) findViewById(R.id.eventDateTextView);
+        TextView eventDayTextView = (TextView) findViewById(R.id.eventDayTextView);
+        TextView eventTimeTextView = (TextView) findViewById(R.id.eventTimeTextView);
+        TextView eventLocationTextView = (TextView) findViewById(R.id.eventLocationTextView);
+        TextView eventAddress1TextView = (TextView) findViewById(R.id.eventAddress1TextView);
+        TextView eventAddress2TextView = (TextView) findViewById(R.id.eventAddress2TextView);
+
 
         AssetManager am = this.getAssets();
         try {
@@ -40,14 +51,22 @@ public class EventDetailsActivity extends AppCompatActivity {
         {
             Log.e("OC Music Events", "Error loading image: " + imageFileName, e);
         }
+
         eventTitleTextView.setText(title);
-        eventDetailsTextView.setText(details);
+        eventDateTextView.setText(date);
+        eventDayTextView.setText(day);
+        eventTimeTextView.setText(time);
+        eventLocationTextView.setText(location);
+        eventAddress1TextView.setText(address1);
+        eventAddress2TextView.setText(address2);
+
+
 
 
     }
 
-    protected void goBackToList(View v)
+    public void goBackToList(View v)
     {
-        finish();
+        this.finish();
     }
 }
